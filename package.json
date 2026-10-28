@@ -18,7 +18,7 @@
     "build:lab": "env -u VSCODE_NODE_COMPILE_CACHE_ROOT tsc",
     "build:prod": "env -u VSCODE_NODE_COMPILE_CACHE_ROOT tsc",
     "start": "node ./build/src/bin/www.js",
-    "start:dev": "npm run build && export DEBUG=mati-arqsw:* && npm start",
+    "start:dev": "npm run build && export DEBUG='mati-arqsw:*,claridad:auth' && npm start",
     "dev": "nodemon --watch src -e ts,js --exec npm run start:dev",
     "test:file": "export $(cat test/.env-test | xargs) && mocha --timeout 10000 --require ts-node/register",
     "test:only": "npm run test:file -- 'test/*/.spec.ts'",
