@@ -1,0 +1,42 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "teslint:recommended"
+    ],
+    "rules": {
+        "quotemark": [
+            true,
+            "single"
+        ],
+        "semicolon": [
+            true,
+            "always"
+        ],
+        "trailing-comma": [
+            false
+        ],
+        "no-console": [
+            true,
+            "log"
+        ],
+        "whitespace": [
+            true,
+            "check-module"
+        ],
+        "variable-comma": {
+            "options": [
+                "ban-keywords",
+                "check-format",
+                "allow-leading-underscore",
+                "allow-pascal-case"
+            ]
+        },
+        "no-require-imports": [
+            false
+        ],
+        "no-var-requires": [
+            false
+        ]
+    },
+    "rulesDirectory": []
+}
